@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>colorChanger</title>
+
+    <style>
+      body {
+        background: black;
+        margin: 0;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 2.5rem;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+      }
+      .btn {
+        width: 100px;
+        height: 75px;
+        margin: 10px;
+        border: 2px solid black;
+      }
+      .red {
+        background: red;
+      }
+      .blue {
+        background: blue;
+      }
+      .green {
+        background: green;
+      }
+      .yellow {
+        background: yellow;
+      }
+      .purple {
+        background: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Color Changer</h1>
+    <nav class="container">
+      <button class="btn red">red</button>
+      <button class="btn blue">blue</button>
+      <button class="btn green">green</button>
+      <button class="btn yellow">yellow</button>
+      <button class="btn purple">purple</button>
+    </nav>
+    <script>
+      const buttons = document.querySelectorAll(".btn");
+      const body = document.body;
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const color = btn.innerText;
+          changeColor(color);
+        });
+      });
+      function changeColor(color) {
+        body.className = "";
+        switch (color) {
+          case "red":
+            body.classList.add("red");
+            break;
+          case "blue":
+            body.classList.add("blue");
+            break;
+          case "green":
+            body.classList.add("green");
+            break;
+          case "yellow":
+            body.classList.add("yellow");
+            break;
+          case "purple":
+            body.classList.add("purple");
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>
