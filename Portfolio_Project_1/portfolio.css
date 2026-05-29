@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: gainsboro;
+}
+
+header {
+    background-color: rgb(27, 36, 87);
+    color: white;
+    padding: 20px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    background-color: rgb(27, 36, 87);
+    padding: 10px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+.nav a:hover {
+    text-decoration: none;
+    color: rgb(32, 13, 55);
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(105, 105, 221);
+}
+
+h2,
+h3 {
+    text-align: center;
+    color: rgb(27, 36, 87);
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.container>* {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.container>*:last-child {
+    border-right: none;
+}
+.Highlights {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.Projects {
+    flex: 1;
+    padding: 20px;
+}
+
+.achivementsCommunity {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+   border-right: 1px solid #ccc;
+   
+
+}
+
+.Achievements {
+    margin-top: 20px;
+}
+
+.involvement {
+    margin-top: 20px;
+}
+
+.rhombus-list {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.rhombus-list li {
+    margin-bottom: 6px;
+}
+
+.rhombus-list li::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: blue;
+    transform: rotate(45deg);
+    margin-right: 8px;
+}
+.peerReview{
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+}
+.peerReview >*{
+    flex:1;
+    border-right: 1px solid #ccc;
+}
+.peerReview>*:last-child{
+    border-right: none;
+}
+h3.peerHead{
+   
+    text-align: left;
+}
+p{
+    margin: 5px;
+}
+footer{
+    text-align: center;
+    margin-top: 20px;
+    background-color:rgb(27, 36, 87);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
